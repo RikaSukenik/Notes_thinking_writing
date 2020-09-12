@@ -141,6 +141,8 @@ Error message and password prompt
 
 <p>This <a class="tc-tiddlylink-external" href="https://tiddlywiki.com" rel="noopener noreferrer" target="_blank">TiddlyWiki</a> contains the following tiddlers:</p><p><ul>
 
+<li>$:/.giffmex/.Stylesheet4popups</li>
+
 <li>$:/config/NewJournal/Text</li>
 
 <li>$:/core</li>
@@ -152,6 +154,8 @@ Error message and password prompt
 <li>$:/GitHub/Repo</li>
 
 <li>$:/GitHub/Username</li>
+
+<li>$:/Import</li>
 
 <li>$:/isEncrypted</li>
 
@@ -177,6 +181,8 @@ Error message and password prompt
 
 <li>Commonplace-book</li>
 
+<li>Draft of 'Tiddler 2'</li>
+
 <li>Prunem</li>
 
 <li>test</li>
@@ -199,6 +205,41 @@ Error message and password prompt
 <!--~~ Ordinary tiddlers ~~-->
 
 <div id="storeArea" style="display:none;">
+<div bag="default" created="20200421214558221" modified="20200423161510720" revision="0" tags="tb $:/tags/Stylesheet" title="$:/.giffmex/.Stylesheet4popups" type="text/css">
+<pre>.tooltip {
+  position: relative;
+  display: inline-block;
+  color:#56e;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 500px;
+height:300px;
+overflow: scroll;
+  background-color: white;
+  color: #000;
+  text-align: left;
+  border-radius: 6px;
+-moz-box-shadow: 10px 10px 5px #bbb;
+-webkit-box-shadow: 10px 10px 5px #bbb;
+box-shadow: 10px 10px 5px #bbb;
+  padding: 15px;
+display:block;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 80;
+  top: 20px;
+  left: 20px;
+}
+
+.tooltip:hover &gt; .tooltiptext {
+  visibility: visible;
+}
+
+</pre>
+</div>
 <div created="20200912202333535" modified="20200912202338677" title="$:/config/NewJournal/Text">
 <pre></pre>
 </div>
@@ -9587,6 +9628,11 @@ Error message and password prompt
 <div created="20200912202350950" modified="20200912202352613" title="$:/GitHub/Username">
 <pre>RikaSukenik</pre>
 </div>
+<div status="complete" title="$:/Import">
+<pre>The following tiddlers were imported:
+
+# [[$:/.giffmex/.Stylesheet4popups]]</pre>
+</div>
 <div title="$:/isEncrypted">
 <pre>no</pre>
 </div>
@@ -9608,7 +9654,7 @@ Error message and password prompt
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20200912210051875" list="[[Tiddler 2]] [[Test Tiddler]] GettingStarted" modified="20200912210105961" title="$:/StoryList">
+<div created="20200912210051875" list="$:/Import [[Draft of 'Tiddler 2']] [[Test Tiddler]] GettingStarted" modified="20200912210105961" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -9781,6 +9827,9 @@ Error message and password prompt
 <div created="20200912204026720" modified="20200912204034777" title="Commonplace-book">
 <pre></pre>
 </div>
+<div created="20200912210359561" draft.of="Tiddler 2" draft.title="Tiddler 2" modified="20200912210733531" tags="" title="Draft of 'Tiddler 2'">
+<pre>`&lt;div class=&quot;tooltip&quot;&gt;&lt;a href=&quot;https://cnn.com&quot;&gt;CNN&lt;/a&gt;&lt;div class=&quot;tooltiptext&quot;&gt;&lt;$transclude tiddler=&quot;New Tiddler&quot; mode=&quot;block&quot;/&gt;&lt;/div&gt;&lt;/div&gt;`</pre>
+</div>
 <div created="20200912203302608" modified="20200912203634525" tags="" title="Prunem">
 <pre>jojjlkjk;lk;lj</pre>
 </div>
@@ -9790,8 +9839,8 @@ Error message and password prompt
 <div created="20200912210109404" modified="20200912210353913" tags="" title="Test Tiddler">
 <pre>Hey just some test content here</pre>
 </div>
-<div created="20200912210359561" modified="20200912210527181" tags="" title="Tiddler 2">
-<pre>`&lt;div class=&quot;tooltip&quot;&gt;&lt;a href=&quot;cnn.com&quot;&gt;CNN&lt;/a&gt;&lt;div class=&quot;tooltiptext&quot;&gt;&lt;$transclude tiddler=&quot;ZZZ&quot; mode=&quot;block&quot;/&gt;&lt;/div&gt;&lt;/div&gt;`</pre>
+<div created="20200912210359561" modified="20200912210620013" tags="" title="Tiddler 2">
+<pre>`&lt;div class=&quot;tooltip&quot;&gt;&lt;a href=&quot;https://cnn.com&quot;&gt;CNN&lt;/a&gt;&lt;div class=&quot;tooltiptext&quot;&gt;&lt;$transclude tiddler=&quot;New Tiddler&quot; mode=&quot;block&quot;/&gt;&lt;/div&gt;&lt;/div&gt;`</pre>
 </div>
 
 
