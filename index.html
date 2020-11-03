@@ -145,11 +145,17 @@ Error message and password prompt
 
 <li>/Users/rika/digitalgarden/tiddlers/$__StoryList.tid</li>
 
+<li>$:/.giffmex/.Stylesheet4popups</li>
+
+<li>$:/.giffmex/EditorToolbar/linkpopups</li>
+
 <li>$:/config/AnimationDuration</li>
 
 <li>$:/config/NewJournal/Tags</li>
 
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/home</li>
+
+<li>$:/config/RelinkOnRename</li>
 
 <li>$:/core</li>
 
@@ -193,21 +199,29 @@ Error message and password prompt
 
 <li>$:/themes/tiddlywiki/vanilla/settings/fontfamily</li>
 
-<li>are ideas getting harder to find?</li>
+<li>$:/user/images/popup-link</li>
+
+<li>Are ideas getting harder to find?</li>
 
 <li>behavioral psychology</li>
 
-<li>creating music</li>
+<li>Creating music</li>
 
-<li>Draft of 'New Tiddler'</li>
+<li>How emotions are made</li>
 
-<li>Musings on Emotions</li>
+<li>Human consciousness</li>
 
-<li>Musings on Ideas</li>
+<li>On Emotions</li>
+
+<li>On Ideas</li>
+
+<li>On Starting Small</li>
 
 <li>TableOfContents</li>
 
-<li>where good ideas come from</li>
+<li>Welcome. Start here</li>
+
+<li>Where good ideas come from</li>
 
 <li>where good ideas come from?</li>
 
@@ -231,6 +245,49 @@ Error message and password prompt
 <div title="/Users/rika/digitalgarden/tiddlers/$__StoryList.tid" revision="0" bag="default">
 <pre></pre>
 </div>
+<div created="20200421214558221" modified="20201103065252002" tags="tb $:/tags/Stylesheet" title="$:/.giffmex/.Stylesheet4popups" type="text/css" revision="0" bag="default">
+<pre>.tooltip {
+  position: relative;
+  display: inline-block;
+  color:#56e;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 500px;
+height:300px;
+overflow: scroll;
+  background-color: white;
+  color: #000;
+  text-align: left;
+  border-radius: 6px;
+-moz-box-shadow: 10px 10px 5px #bbb;
+-webkit-box-shadow: 10px 10px 5px #bbb;
+box-shadow: 10px 10px 5px #bbb;
+  padding: 15px;
+display:block;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 80;
+  top: 20px;
+  left: 20px;
+}
+
+.tooltip:hover &gt; .tooltiptext {
+  visibility: visible;
+}
+
+</pre>
+</div>
+<div caption="link popups" condition="[&lt;targetTiddler&gt;!has[type]] [&lt;targetTiddler&gt;type[text/vnd.tiddlywiki]]" created="20200128024856933" description="link popups" icon="$:/user/images/popup-link" modified="20201103065246644" shortcuts="" tags="$:/tags/EditorToolbar" title="$:/.giffmex/EditorToolbar/linkpopups" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>&lt;$action-sendmessage
+    $message=&quot;tm-edit-text-operation&quot;
+    $param=&quot;wrap-selection&quot;
+    prefix=&quot;&quot;&quot;&lt;div class=&quot;tooltip&quot;&gt;&lt;a href=&quot;XXX&quot;&gt;YYY&lt;/a&gt;&lt;div class=&quot;tooltiptext&quot;&gt;&lt;$transclude tiddler=&quot;ZZZ&quot; mode=&quot;block&quot;/&gt;&lt;/div&gt;&lt;/div&gt;&quot;&quot;&quot;
+    suffix=&quot;&quot;&quot;&quot;&quot;&quot;
+/&gt;</pre>
+</div>
 <div created="20201022165827758" modified="20201022165828886" title="$:/config/AnimationDuration" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre></pre>
 </div>
@@ -239,6 +296,9 @@ Error message and password prompt
 </div>
 <div created="20201005172017944" modified="20201005172017958" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/home" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>show</pre>
+</div>
+<div created="20201103064608813" modified="20201103064608824" title="$:/config/RelinkOnRename" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>yes</pre>
 </div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="" description="TiddlyWiki5 core" list="readme" name="Core" plugin-priority="0" plugin-type="plugin" title="$:/core" type="application/json" version="5.1.22" revision="0" bag="default">
 <pre>{
@@ -9647,9 +9707,8 @@ Error message and password prompt
 &lt;/html&gt;
 `</pre>
 </div>
-<div created="20201020231841913" modified="20201022170530087" title="$:/DefaultTiddlers" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>[[where good ideas come from]]
-[[are ideas getting harder to find?]]</pre>
+<div created="20201020231841913" modified="20201103070449167" title="$:/DefaultTiddlers" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>[[Welcome. Start here]]</pre>
 </div>
 <div created="20201022042001599" modified="20201022042001610" title="$:/GitHub/Branch" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre></pre>
@@ -9855,7 +9914,7 @@ very-muted-foreground: #888888</pre>
 <div title="$:/status/RequireReloadDueToPluginChange" revision="0" bag="default">
 <pre>no</pre>
 </div>
-<div list="[[where good ideas come from]] [[are ideas getting harder to find?]]" title="$:/StoryList" revision="1" bag="default">
+<div list="[[Welcome. Start here]]" title="$:/StoryList" revision="1" bag="default">
 <pre></pre>
 </div>
 <div created="20201005172041502" modified="20201005172041527" title="$:/theme" type="text/vnd.tiddlywiki" revision="0" bag="default">
@@ -9979,7 +10038,10 @@ very-muted-foreground: #888888</pre>
 <div created="20201005172219901" modified="20201005172306929" title="$:/themes/tiddlywiki/vanilla/settings/fontfamily" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>font-family: 'Athiti', sans-serif;</pre>
 </div>
-<div created="20201020181007761" modified="20201022165443450" tags="[[musings on ideas]]" title="are ideas getting harder to find?" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div created="20200514035239004" modified="20201103065240479" tags="$:/tags/Image" title="$:/user/images/popup-link" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>&lt;svg width=&quot;22pt&quot; height=&quot;22pt&quot; class=&quot;tc-popup-link-button tc-image-button&quot; viewBox=&quot;0 0 400 400&quot;&gt;&lt;path d=&quot;M297.333 3.001c-16.479 3.33-16.404 3.27-65.879 52.589-49.98 49.821-50.491 50.422-54.893 64.439-2.298 7.317-2.297 23.961.002 31.281 2.392 7.617 7.985 18.023 9.687 18.023 2.092 0 30.417-29.658 30.417-31.849 0-4.403 2.097-6.716 43.765-48.273 45.73-45.607 43.561-43.766 49.466-41.98 4.693 1.419 42.824 40.475 43.256 44.305.646 5.728 1.632 4.593-42.027 48.342-42.956 43.045-43.406 43.455-47.599 43.455-2.424 0-3.235.698-17.867 15.357l-15.328 15.357 1.655 1.263c17.552 13.392 43.933 14.067 63.174 1.617 4.439-2.872 87.17-84.958 91.977-91.26 14.879-19.505 14.791-47.465-.211-67-3.958-5.154-43.913-44.686-47.812-47.305C327.468 3.535 310.998.24 297.333 3.001m-44 115.072c-5.551 2.142-130.874 127.201-134.196 133.913-8.924 18.035 9.248 36.995 28.53 29.764 5.211-1.954 130.679-127.304 133.862-133.736 8.831-17.844-9.393-37.196-28.196-29.941m-126.557 56.674c-8.587 1.428-17.698 5.458-24.776 10.96-5.33 4.142-87.421 86.711-89.941 90.464-13.452 20.035-12.774 46.341 1.68 65.162 3.958 5.154 43.913 44.686 47.811 47.305 19.686 13.227 46.316 12.268 65.117-2.345 5.206-4.046 87.397-86.673 89.817-90.293 12.656-18.933 12.798-43.988.357-62.788-.927-1.4-2.022-2.545-2.435-2.545-2.094 0-32.406 31.672-32.406 33.86 0 4.39-2.112 6.72-43.432 47.919-45.431 45.298-43.952 44.04-49.649 42.223-2.765-.882-40.666-37.748-42.634-41.469-1.222-2.312-1.22-6.76.003-9.066.525-.991 19.65-20.453 42.5-43.25 43.277-43.178 44.199-43.996 47.974-42.551.553.212 7.258-6.019 17.238-16.017l16.333-16.363-1.654-1.263c-10.995-8.39-27.578-12.324-41.903-9.943&quot; fill-rule=&quot;evenodd&quot;/&gt;&lt;/svg&gt;</pre>
+</div>
+<div created="20201020181007761" modified="20201103064303257" tags="[[On Ideas]]" title="Are ideas getting harder to find?" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>I read a research paper the other day which makes a bold argument: an exponential growth in research effort is needed to generate exponential economic growth. My first thought was, 'wow! - exponential growth seems radical, and my first question was, 'is the world able to sustain so much growth?' Thomas Malthus, one of the great economists from the 18th century, would have laughed and said no, the world cannot sustain so much growth. I think it's fair to say that Malthus was an exceptional economist; most economists, for reasons I will not pretend to know, believe that economic growth is infinite. Malthus argued against this popular view. So, why are 3 modern day economists/researchers from Stanford and MIT arguing for exponential growth in research effort? 
 
 There is a lot to unpack in this paper, and I'm just going to pick a few things that stood out to me. 
@@ -9999,7 +10061,7 @@ What is the future of AI &amp; Research?
 <div created="20201021164051793" modified="20201022043329299" tags="[[musings on polarisation]]" title="behavioral psychology" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre></pre>
 </div>
-<div created="20201028225202265" modified="20201028235422854" tags="[[Musings on Emotions]]" title="creating music" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div created="20201028225202265" modified="20201103064417192" tags="[[On Emotions]]" title="Creating music" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>Creating music is an emotional journey. In April of 2020, I decided to learn how to use Ableton, a Digital Audio Workstation, to create electronic music. You can listen to the track I created on [[Soundcloud | https://soundcloud.com/ikaukenik/highway-of-the-future]]
 
 Ableton has a great free ebook on its website to help new creators get started. The book was inspirational on many levels. 
@@ -10008,21 +10070,37 @@ It points out that &quot;as electronic producers, often our first instinct when 
 
 </pre>
 </div>
-<div created="20201028222029093" draft.of="New Tiddler" draft.title="New Tiddler" modified="20201028222029206" tags="[[Musings on Emotions]]" title="Draft of 'New Tiddler'" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre></pre>
+<div created="20201028222029093" modified="20201103064610013" tags="[[On Emotions]]" title="How emotions are made" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>[img | [https://media.wnyc.org/i/800/0/c/85/1/3_sticker_evolution1.jpg]]
+
+What are these? Emojis, of course! Your brain probably instantly started trying to guess the emotion. 
+
+We try to guess emotions all the time, both our own and other peoples, however the latest neuroscience research shows that people do not experience the same emotions. For instance, my experience of the emotion of fear is different from your experience of the emotion of fear, my anger is different from your anger, my happiness is different from your happiness, and so on. 
+
+It's funny how corporations are trying to guess people's emotions e.g, Facebook hired a Pixar artist to create a slew of emoticons, and Google and Apple have invested billions of dollars in facial recognition technology to read people's emotions. Lisa Feldman Barrett, a scientist and author of [[How Emotions are Made|https://www.goodreads.com/book/show/23719305-how-emotions-are-made]] writes that this is ludicrous because our emotions are not universal. 
+
+Even though the latest neuroscience research shows that our emotions do not have a fingerprint, it will take a while for society to catch up to this knowledge. Probably as long as it took people to accept Charles Darwins' theory of natural selection. People generally don't like to change their views, and emotions just &quot;feel&quot; so engrained in our genes. It's challenging to accept the new view that our emotions are not written into our genes; rather, we are the authors of our emotions. </pre>
 </div>
-<div created="20201028221910837" modified="20201028225155232" tags="TableOfContents" title="Musings on Emotions" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div created="20201030215456548" modified="20201103064622222" tags="[[On Emotions]]" title="Human consciousness" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>Do you know the feeling when you feel connected to another human being? Like they get you. Sometimes we don't even need to talk to experience this feeling. What is this &quot;connection&quot; and do other animals experience it?</pre>
+</div>
+<div created="20201028221910837" modified="20201103064022285" tags="TableOfContents" title="On Emotions" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>[img[https://i0.wp.com/john.do/wp-content/uploads/2016/12/emotional-journey-of-creating-anything-great-infographic-large.jpg]]
 
 A maker doesn't set out to create a mediocre piece. Notice the emphasis on ''GREAT''.
 
 Whether you are creating artwork, music, writing, or a software program, no one sets out to create something average. We all have the capacity inside of us for greatness, we just need to manage the inevitable emotional ups and down that come with creating. If you're thinking something like, I'm not a maker, or I haven't created anything, allow me to ask you a personal question. Have you had sex? If you have, you are a creator. Not only are you creating a human being, but you are also creating //how// you have sex. [[J. Krishnamurti]], a renowned philosopher and spiritual teacher, explains the creativity behind sex in [[this fascinating video | https://www.youtube.com/watch?v=lrKj3lRXeCM&amp;t=18s]]. </pre>
 </div>
-<div created="20201020180906918" modified="20201028222017200" tags="TableOfContents" title="Musings on Ideas" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>All roads start from ideas. We seem to have an obsession with idea generation. Have you seen [[IdeasAI | https://ideasai.net/]] yet?
+<div created="20201020180906918" modified="20201103070353707" tags="TableOfContents" title="On Ideas" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>All roads start from ideas. We seem to have an obsession with idea generation. Have you seen [[IdeasAI|https://ideasai.net]] yet?
 
 This section includes my thoughts on ideas, from different perspectives; economics and popular science.
 </pre>
+</div>
+<div created="20201103062250881" modified="20201103065338720" tags="TableOfContents" title="On Starting Small" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>Small daily habits add up to a lifetime of goodness. Every day that I practice my habits is another day that I solidify this belief. Instead of overcomplicating life, let's break it down into its component parts. What are the smallest pieces that you can break an activity into? Once you've identified the smallest piece, connect it to other small pieces and build off of the small pieces. Like lego blocks. It's funny how this idea which once seemed so novel is now a recurrent part of my life. I see it everywhere. I was originally introduced to the value of lego blocks when I was working in the cryptocurrency space. Decentralized finance, or DeFi for short, is the amalgamation of financial primitives that are built one on top of the other.
+
+I have since come across this concept in the context of mental models, specifically first principles. Thinking in first principles means breaking down a complex idea into its component parts. I've also come across the idea in the context of writing, specifically the Zettelkasten method. Additionally, I've seen it applied to habit building; build small, tiny habits and stack them on top of each other to superpower them.  </pre>
 </div>
 <div caption="Contents" created="20201005173216625" list-before="$:/core/ui/SideBar/Open" modified="20201005173652286" tags="$:/tags/SideBar" title="TableOfContents" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>&lt;div class=&quot;tc-table-of-contents&quot;&gt;
@@ -10031,7 +10109,12 @@ This section includes my thoughts on ideas, from different perspectives; economi
 
 &lt;/div&gt;</pre>
 </div>
-<div created="20201020232842931" modified="20201020232854934" tags="[[musings on ideas]]" title="where good ideas come from" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div created="20201103064636345" modified="20201103070541307" tags="TableOfContents" title="Welcome. Start here" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>Hi, welcome to my digital garden. This is a place where I collect thoughts, most of which are unbaked. Unbaked goodness is real. Read more about it &lt;div class=&quot;tooltip&quot;&gt;here&lt;div class=&quot;tooltiptext&quot;&gt;&lt;$transclude tiddler=&quot;On Starting Small&quot; mode=&quot;block&quot;/&gt;&lt;/div&gt;&lt;/div&gt;
+
+You can navigate by clicking on Contents in the right menu bar. </pre>
+</div>
+<div created="20201020232842931" modified="20201103064330178" tags="[[On Ideas]]" title="Where good ideas come from" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre></pre>
 </div>
 <div created="20201020181143397" modified="20201020181204432" tags="[[are ideas getting harder to find?]]" title="where good ideas come from?" type="text/vnd.tiddlywiki" revision="0" bag="default">
