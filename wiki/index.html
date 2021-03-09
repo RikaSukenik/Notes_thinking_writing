@@ -191,6 +191,8 @@ Error message and password prompt
 
 <li>$:/config/jd/mobbutton/visibility/$:/plugins/jd/mob/button/search</li>
 
+<li>$:/config/Navigation/openLinkFromInsideRiver</li>
+
 <li>$:/config/Navigation/UpdateAddressBar</li>
 
 <li>$:/config/Navigation/UpdateHistory</li>
@@ -354,6 +356,8 @@ Error message and password prompt
 <li>$:/isEncrypted</li>
 
 <li>$:/language/DefaultNewTiddlerTitle</li>
+
+<li>$:/layout</li>
 
 <li>$:/palette</li>
 
@@ -569,6 +573,8 @@ Error message and password prompt
 
 <li>$:/state/dropdown/keyboardshortcut/sidebar-search-286565879</li>
 
+<li>$:/state/image-picker/system--1217244810</li>
+
 <li>$:/state/palettemanager/$:/palettes/rr/DayMode/menubar-foreground</li>
 
 <li>$:/state/plugin-info--896887961-$:/plugins/tiddlywiki/menubar</li>
@@ -687,11 +693,25 @@ Error message and password prompt
 
 <li>$:/themes/tiddlywiki/vanilla</li>
 
+<li>$:/themes/tiddlywiki/vanilla/metrics/bodyfontsize</li>
+
+<li>$:/themes/tiddlywiki/vanilla/metrics/fontsize</li>
+
 <li>$:/themes/tiddlywiki/vanilla/metrics/lineheight</li>
+
+<li>$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint</li>
 
 <li>$:/themes/tiddlywiki/vanilla/metrics/sidebarwidth</li>
 
+<li>$:/themes/tiddlywiki/vanilla/metrics/storyright</li>
+
+<li>$:/themes/tiddlywiki/vanilla/metrics/storywidth</li>
+
+<li>$:/themes/tiddlywiki/vanilla/metrics/tiddlerwidth</li>
+
 <li>$:/themes/tiddlywiki/vanilla/options/sidebarlayout</li>
+
+<li>$:/themes/tiddlywiki/vanilla/settings/backgroundimage</li>
 
 <li>$:/themes/tiddlywiki/vanilla/settings/fontfamily</li>
 
@@ -1899,6 +1919,9 @@ Error message and password prompt
 <div bag="default" created="20201023191525385" modified="20201023191526537" revision="0" title="$:/config/jd/mobbutton/visibility/$:/plugins/jd/mob/button/search" type="text/vnd.tiddlywiki">
 <pre>show</pre>
 </div>
+<div created="20210309024405912" modified="20210309024405912" title="$:/config/Navigation/openLinkFromInsideRiver">
+<pre>above</pre>
+</div>
 <div created="20201031100443866" modified="20201031100443866" title="$:/config/Navigation/UpdateAddressBar">
 <pre>permalink</pre>
 </div>
@@ -1926,11 +1949,11 @@ Error message and password prompt
 <div created="20201201192342772" modified="20201201192342772" title="$:/config/PageControlButtons/Visibility/$:/rr/PageControls/Show-Hide-References">
 <pre>hide</pre>
 </div>
-<div created="20210212142758394" modified="20210309023548437" title="$:/config/plugins/menubar/MenuItems/Visibility/$:/plugins/tiddlywiki/menubar/items/contents">
-<pre>show</pre>
+<div created="20210212142758394" modified="20210309024047701" title="$:/config/plugins/menubar/MenuItems/Visibility/$:/plugins/tiddlywiki/menubar/items/contents">
+<pre>hide</pre>
 </div>
-<div created="20210212142758394" modified="20210309023548438" title="$:/config/plugins/menubar/MenuItems/Visibility/$:/plugins/tiddlywiki/menubar/items/hamburger">
-<pre>show</pre>
+<div created="20210212142758394" modified="20210309024047701" title="$:/config/plugins/menubar/MenuItems/Visibility/$:/plugins/tiddlywiki/menubar/items/hamburger">
+<pre>hide</pre>
 </div>
 <div created="20210212142842192" modified="20210212195912023" title="$:/config/plugins/menubar/MenuItems/Visibility/$:/plugins/tiddlywiki/menubar/items/pagecontrols">
 <pre>hide</pre>
@@ -12048,7 +12071,7 @@ $:/config/EditToolbarButtons/Visibility/$(listItem)$
 &lt;$macrocall $name=&quot;tabs&quot; tabsList=&quot;[all[shadows+tiddlers]tag[$:/tags/MoreSideBar]!has[draft.of]]&quot; default={{$:/config/DefaultMoreSidebarTab}} state=&quot;$:/state/tab/moresidebar&quot; class=&quot;tc-vertical tc-sidebar-tabs-more&quot; /&gt;
 &lt;/div&gt;</pre>
 </div>
-<div bag="default" caption="RECENTLY ACCESSED" created="20201227154039983" modified="20210309023548439" revision="57" rr-mod="Added caption field: RECENTLY ACCESSED" tags="$:/rr/menu rr-TW5 rr-UX-mod" title="$:/core/ui/SideBar/Open" type="text/vnd.tiddlywiki">
+<div bag="default" caption="RECENTLY ACCESSED" created="20201227154039983" modified="20210309024047705" revision="57" rr-mod="Added caption field: RECENTLY ACCESSED" tags="$:/tags/SideBar rr-TW5 rr-UX-mod" title="$:/core/ui/SideBar/Open" type="text/vnd.tiddlywiki">
 <pre>\whitespace trim
 \define lingo-base() $:/language/CloseAll/
 
@@ -12252,7 +12275,7 @@ $:/config/PageControlButtons/Visibility/$(listItem)$
 &lt;/div&gt;
 </pre>
 </div>
-<div created="20210212142557454" modified="20210212142557454" tags="" title="$:/core/ui/ViewTemplate/subtitle">
+<div created="20210212142557454" modified="20210309024303742" tags="" title="$:/core/ui/ViewTemplate/subtitle">
 <pre>\whitespace trim
 &lt;$reveal type=&quot;nomatch&quot; stateTitle=&lt;&lt;folded-state&gt;&gt; text=&quot;hide&quot; tag=&quot;div&quot; retain=&quot;yes&quot; animate=&quot;yes&quot;&gt;
 &lt;div class=&quot;tc-subtitle&quot;&gt;
@@ -12262,7 +12285,7 @@ $:/config/PageControlButtons/Visibility/$(listItem)$
 &lt;/$reveal&gt;
 </pre>
 </div>
-<div created="20210212142556300" modified="20210212142556300" tags="" title="$:/core/ui/ViewTemplate/tags">
+<div created="20210212142556300" modified="20210309024304491" tags="$:/tags/ViewTemplate" title="$:/core/ui/ViewTemplate/tags">
 <pre>&lt;$reveal type=&quot;nomatch&quot; stateTitle=&lt;&lt;folded-state&gt;&gt; text=&quot;hide&quot; tag=&quot;div&quot; retain=&quot;yes&quot; animate=&quot;yes&quot;&gt;
 &lt;div class=&quot;tc-tags-wrapper&quot;&gt;&lt;$list filter=&quot;[all[current]tags[]sort[title]]&quot; template=&quot;$:/core/ui/TagTemplate&quot; storyview=&quot;pop&quot;/&gt;&lt;/div&gt;
 &lt;/$reveal&gt;
@@ -12314,7 +12337,7 @@ $:/config/ViewToolbarButtons/Visibility/$(listItem)$
 <div created="20210213124753025" modified="20210308234637913" title="$:/DefaultTiddlers">
 <pre>[[Welcome to my online space]]</pre>
 </div>
-<div bag="default" created="20210210181701060" creator="akhater" list-before="$:/core/ui/SideBar/Open" modified="20210309023548436" modifier="akhater" revision="118" tags="$:/tags/SideBar" title="$:/drift/side-by-side" type="text/vnd.tiddlywiki">
+<div bag="default" created="20210210181701060" creator="akhater" list-before="$:/core/ui/SideBar/Open" modified="20210309024047698" modifier="akhater" revision="118" tags="" title="$:/drift/side-by-side" type="text/vnd.tiddlywiki">
 <pre>\define drop-actions()
 &lt;$action-listops $tiddler=&quot;$:/rr/pinned&quot; $subfilter=&quot;+[insertbefore:currentTiddler&lt;actionTiddler&gt;]&quot;/&gt;
 &lt;$fieldmangler tiddler=&lt;&lt;actionTiddler&gt;&gt;&gt;
@@ -12445,6 +12468,9 @@ fill:$(foregroundColor)$;
 </div>
 <div created="20210213124805015" modified="20210213124805479" title="$:/language/DefaultNewTiddlerTitle">
 <pre>New Page</pre>
+</div>
+<div created="20210309024447475" modified="20210309024447475" title="$:/layout">
+<pre>$:/core/ui/PageTemplate</pre>
 </div>
 <div created="20201201192441925" modified="20210305235709591" title="$:/palette">
 <pre>$:/palettes/rr/DayMode</pre>
@@ -16419,8 +16445,8 @@ Copy stream to clipboard as `&lt;ul&gt;&lt;li&gt;` list
 &lt;p align=right&gt;&lt;small&gt;(//Transclusion of [[$X$]] as list//)&lt;/small&gt;&lt;/p&gt;
 \end</pre>
 </div>
-<div bag="default" created="20210210175237537" modified="20210309023548436" revision="43" tags="rr-TW5 rr-UX" title="$:/rr/pinned" type="text/vnd.tiddlywiki">
-<pre>active</pre>
+<div bag="default" created="20210210175237537" modified="20210309024047697" revision="43" tags="rr-TW5 rr-UX" title="$:/rr/pinned" type="text/vnd.tiddlywiki">
+<pre>inactive</pre>
 </div>
 <div bag="default" caption="{{$:/core/images/close-button}} {{$:/language/Buttons/Close/Caption}}" created="20210103082124883" creator="akhater" description="{{$:/language/Buttons/Close/Hint}}" modified="20210211165206078" modifier="akhater" revision="19" tags="rr-UX rr-TW5" title="$:/rr/side-by-side/Buttons/close" type="text/vnd.tiddlywiki">
 <pre>&lt;$button tooltip={{$:/config/shortcuts/revealPinnedSideBar}} aria-label=&quot;Hide the Pinned SideBar and Reveal the Normal SideBar&quot; class=&lt;&lt;tv-config-toolbar-class&gt;&gt;&gt;
@@ -16545,14 +16571,14 @@ $:/state/folded/$(currentTiddler)$
 &lt;/div&gt;
 &lt;/$vars&gt;</pre>
 </div>
-<div bag="default" caption="RR-TW5" created="20201022113249513" list-before="$:/core/ui/SideBar/Open" modified="20210309023548438" revision="57" tags="$:/rr/menu rr-TW5 rr-UX" title="$:/rr/SideBar/Core" type="text/vnd.tiddlywiki">
+<div bag="default" caption="RR-TW5" created="20201022113249513" list-before="$:/core/ui/SideBar/Open" modified="20210309024047704" revision="57" tags="$:/tags/SideBar rr-TW5 rr-UX" title="$:/rr/SideBar/Core" type="text/vnd.tiddlywiki">
 <pre>&lt;div class=&quot;tc-table-of-contents&quot;&gt;
 
 &lt;&lt;toc 'rr-core-page'&gt;&gt;
 
 &lt;/div&gt;</pre>
 </div>
-<div bag="default" caption="SHORTCUTS" created="20201103094201681" list-after="$:/rr/SideBar/Core" modified="20210309023548439" revision="57" stream-list="" stream-type="default" tags="$:/rr/menu rr-TW5 rr-UX" title="$:/rr/SideBar/Shortcuts" type="text/vnd.tiddlywiki">
+<div bag="default" caption="SHORTCUTS" created="20201103094201681" list-after="$:/rr/SideBar/Core" modified="20210309024047705" revision="57" stream-list="" stream-type="default" tags="$:/tags/SideBar rr-TW5 rr-UX" title="$:/rr/SideBar/Shortcuts" type="text/vnd.tiddlywiki">
 <pre>&lt;div class=&quot;tc-table-of-contents&quot;&gt;
 
 &lt;&lt;toc &quot;rr-shortcuts&quot; &quot;!tag[nolist]sort[created]&quot;&gt;&gt;
@@ -16984,6 +17010,9 @@ $:/core/images/storyview-$(storyview)$
 <div created="20210213150536401" modified="20210213152454203" title="$:/state/dropdown/keyboardshortcut/sidebar-search-286565879">
 <pre>open</pre>
 </div>
+<div created="20210309024522314" modified="20210309024522314" title="$:/state/image-picker/system--1217244810">
+<pre>show</pre>
+</div>
 <div created="20210213125905648" modified="20210213125905648" title="$:/state/palettemanager/$:/palettes/rr/DayMode/menubar-foreground">
 <pre>show</pre>
 </div>
@@ -16999,7 +17028,7 @@ $:/core/images/storyview-$(storyview)$
 <div created="20210213125853136" modified="20210213125853136" title="$:/state/ShowPaletteEditor">
 <pre>yes</pre>
 </div>
-<div created="20210212142758393" modified="20210309023548437" title="$:/state/sidebar">
+<div created="20210212142758393" modified="20210309024047701" title="$:/state/sidebar">
 <pre>yes</pre>
 </div>
 <div created="20210307171948372" modified="20210307171948372" title="$:/state/sq/streams/current-drag-nextsibling--1018825613">
@@ -17074,16 +17103,16 @@ $:/core/images/storyview-$(storyview)$
 <div created="20210308232714375" modified="20210308232714375" title="$:/state/sq/streams/visibility/Welcome to my online space/20210308232211959--1055627720">
 <pre>hide</pre>
 </div>
-<div created="20210308231345641" modified="20210308231756659" title="$:/state/streams/settings/tabs-1976991403">
-<pre>$:/plugins/sq/streams/Settings/config</pre>
+<div created="20210308231345641" modified="20210309024343631" title="$:/state/streams/settings/tabs-1976991403">
+<pre>$:/plugins/sq/streams/Settings/shortcuts</pre>
 </div>
 <div created="20210212195452718" modified="20210214154358720" title="$:/state/tab--1498284803">
 <pre>$:/core/ui/AdvancedSearch/System</pre>
 </div>
-<div created="20210213124827375" modified="20210308231400497" title="$:/state/tab--1963855381">
+<div created="20210213124827375" modified="20210309024448552" title="$:/state/tab--1963855381">
 <pre>$:/themes/tiddlywiki/vanilla/themetweaks</pre>
 </div>
-<div created="20210304033934429" modified="20210308231824202" title="$:/state/tab--2112689675">
+<div created="20210304033934429" modified="20210309024327273" title="$:/state/tab--2112689675">
 <pre>$:/core/ui/ControlPanel/Basics</pre>
 </div>
 <div created="20210213124458464" modified="20210213130054074" title="$:/state/tab--86143343">
@@ -17092,8 +17121,8 @@ $:/core/images/storyview-$(storyview)$
 <div created="20210308231821481" modified="20210308231821481" title="$:/state/tab--959111941">
 <pre>$:/core/ui/ControlPanel/EditorTypes</pre>
 </div>
-<div created="20210212142638676" modified="20210309023525084" title="$:/state/tab-1749438307">
-<pre>$:/core/ui/ControlPanel/Info</pre>
+<div created="20210212142638676" modified="20210309024429497" title="$:/state/tab-1749438307">
+<pre>$:/core/ui/ControlPanel/Appearance</pre>
 </div>
 <div created="20210305235608208" modified="20210307171913257" title="$:/state/tab-2065006209">
 <pre>$:/core/ui/ControlPanel/Saving/General</pre>
@@ -17101,7 +17130,7 @@ $:/core/images/storyview-$(storyview)$
 <div created="20210213150454706" modified="20210308230801140" title="$:/state/tab/search-results/sidebar">
 <pre>$:/plugins/danielo515/ContextPlugin/visualizer</pre>
 </div>
-<div created="20210212142550455" modified="20210309023548437" title="$:/state/tab/sidebar--595412856">
+<div created="20210212142550455" modified="20210309024047701" title="$:/state/tab/sidebar--595412856">
 <pre>$:/drift/side-by-side</pre>
 </div>
 <div created="20210213123539251" modified="20210213125557080" title="$:/state/tab1-488476099">
@@ -17310,14 +17339,35 @@ $:/core/images/storyview-$(storyview)$
     }
 }</pre>
 </div>
+<div created="20210309023942166" modified="20210309023942294" title="$:/themes/tiddlywiki/vanilla/metrics/bodyfontsize">
+<pre>16px</pre>
+</div>
+<div created="20210309023935529" modified="20210309023935854" title="$:/themes/tiddlywiki/vanilla/metrics/fontsize">
+<pre>16px</pre>
+</div>
 <div bag="default" created="20201022115207543" modified="20201022115228847" revision="0" title="$:/themes/tiddlywiki/vanilla/metrics/lineheight" type="text/vnd.tiddlywiki">
 <pre>20px</pre>
 </div>
-<div created="20210212142758393" modified="20210309023548437" title="$:/themes/tiddlywiki/vanilla/metrics/sidebarwidth">
-<pre>40%</pre>
+<div created="20210309024010107" modified="20210309024011896" title="$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint">
+<pre>800px</pre>
 </div>
-<div bag="default" created="20200127172539001" modified="20210309023548437" revision="0" tags="tb" title="$:/themes/tiddlywiki/vanilla/options/sidebarlayout" type="text/vnd.tiddlywiki">
-<pre>fluid-fixed</pre>
+<div created="20210212142758393" modified="20210309024047701" title="$:/themes/tiddlywiki/vanilla/metrics/sidebarwidth">
+<pre>330px</pre>
+</div>
+<div created="20210309024108061" modified="20210309024121494" title="$:/themes/tiddlywiki/vanilla/metrics/storyright">
+<pre>870px</pre>
+</div>
+<div created="20210309023953033" modified="20210309024236192" title="$:/themes/tiddlywiki/vanilla/metrics/storywidth">
+<pre>700px</pre>
+</div>
+<div created="20210309024649805" modified="20210309024715258" title="$:/themes/tiddlywiki/vanilla/metrics/tiddlerwidth">
+<pre>760px</pre>
+</div>
+<div bag="default" created="20200127172539001" modified="20210309024635317" revision="0" tags="tb" title="$:/themes/tiddlywiki/vanilla/options/sidebarlayout" type="text/vnd.tiddlywiki">
+<pre>fixed-fluid</pre>
+</div>
+<div created="20210309024510497" modified="20210309024524320" title="$:/themes/tiddlywiki/vanilla/settings/backgroundimage">
+<pre></pre>
 </div>
 <div created="20210308231626507" modified="20210308231716763" title="$:/themes/tiddlywiki/vanilla/settings/fontfamily">
 <pre>sans-serif;</pre>
